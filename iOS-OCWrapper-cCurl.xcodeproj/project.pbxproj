@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84FA29AA288743F900D45FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA29A9288743F900D45FF4 /* AppDelegate.swift */; };
+		84FA29AC288743F900D45FF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA29AB288743F900D45FF4 /* SceneDelegate.swift */; };
+		84FA29AE288743F900D45FF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA29AD288743F900D45FF4 /* ViewController.swift */; };
+		84FA29B1288743F900D45FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FA29AF288743F900D45FF4 /* Main.storyboard */; };
+		84FA29B3288743FE00D45FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FA29B2288743FE00D45FF4 /* Assets.xcassets */; };
+		84FA29B6288743FE00D45FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FA29B4288743FE00D45FF4 /* LaunchScreen.storyboard */; };
+		84FA29C0288744C500D45FF4 /* RequestWithCurlWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84FA29BF288744C500D45FF4 /* RequestWithCurlWrapper.mm */; };
+		84FA29C52887450D00D45FF4 /* RequestWithCurl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84FA29C32887450D00D45FF4 /* RequestWithCurl.cpp */; };
+		84FA29C82887466A00D45FF4 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA29C72887466A00D45FF4 /* libcurl.a */; };
+		84FA29D52887470E00D45FF4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA29D42887470700D45FF4 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84FA29A6288743F900D45FF4 /* iOS-OCWrapper-cCurl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-OCWrapper-cCurl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FA29A9288743F900D45FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84FA29AB288743F900D45FF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84FA29AD288743F900D45FF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84FA29B0288743F900D45FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84FA29B2288743FE00D45FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84FA29B5288743FE00D45FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84FA29B7288743FE00D45FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FA29BE288744C500D45FF4 /* iOS-OCWrapper-cCurl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-OCWrapper-cCurl-Bridging-Header.h"; sourceTree = "<group>"; };
+		84FA29BF288744C500D45FF4 /* RequestWithCurlWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RequestWithCurlWrapper.mm; sourceTree = "<group>"; };
+		84FA29C1288744DD00D45FF4 /* RequestWithCurlWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestWithCurlWrapper.h; sourceTree = "<group>"; };
+		84FA29C32887450D00D45FF4 /* RequestWithCurl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RequestWithCurl.cpp; sourceTree = "<group>"; };
+		84FA29C42887450D00D45FF4 /* RequestWithCurl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestWithCurl.h; sourceTree = "<group>"; };
+		84FA29C72887466A00D45FF4 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		84FA29CA2887467C00D45FF4 /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
+		84FA29CB2887467C00D45FF4 /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		84FA29CC2887467C00D45FF4 /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		84FA29CD2887467C00D45FF4 /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		84FA29CE2887467C00D45FF4 /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		84FA29CF2887467C00D45FF4 /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		84FA29D02887467C00D45FF4 /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
+		84FA29D12887467C00D45FF4 /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		84FA29D22887467C00D45FF4 /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
+		84FA29D42887470700D45FF4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FA29A3288743F900D45FF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA29C82887466A00D45FF4 /* libcurl.a in Frameworks */,
+				84FA29D52887470E00D45FF4 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FA299D288743F900D45FF4 = {
+			isa = PBXGroup;
+			children = (
+				84FA29A8288743F900D45FF4 /* iOS-OCWrapper-cCurl */,
+				84FA29A7288743F900D45FF4 /* Products */,
+				84FA29D32887470700D45FF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84FA29A7288743F900D45FF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FA29A6288743F900D45FF4 /* iOS-OCWrapper-cCurl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FA29A8288743F900D45FF4 /* iOS-OCWrapper-cCurl */ = {
+			isa = PBXGroup;
+			children = (
+				84FA29C92887467C00D45FF4 /* include */,
+				84FA29C62887465900D45FF4 /* libs */,
+				84FA29C2288744E200D45FF4 /* Cpp */,
+				84FA29BD2887443100D45FF4 /* OCWrappers */,
+				84FA29A9288743F900D45FF4 /* AppDelegate.swift */,
+				84FA29AB288743F900D45FF4 /* SceneDelegate.swift */,
+				84FA29AD288743F900D45FF4 /* ViewController.swift */,
+				84FA29AF288743F900D45FF4 /* Main.storyboard */,
+				84FA29B2288743FE00D45FF4 /* Assets.xcassets */,
+				84FA29B4288743FE00D45FF4 /* LaunchScreen.storyboard */,
+				84FA29B7288743FE00D45FF4 /* Info.plist */,
+			);
+			path = "iOS-OCWrapper-cCurl";
+			sourceTree = "<group>";
+		};
+		84FA29BD2887443100D45FF4 /* OCWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				84FA29C1288744DD00D45FF4 /* RequestWithCurlWrapper.h */,
+				84FA29BF288744C500D45FF4 /* RequestWithCurlWrapper.mm */,
+				84FA29BE288744C500D45FF4 /* iOS-OCWrapper-cCurl-Bridging-Header.h */,
+			);
+			path = OCWrappers;
+			sourceTree = "<group>";
+		};
+		84FA29C2288744E200D45FF4 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				84FA29C32887450D00D45FF4 /* RequestWithCurl.cpp */,
+				84FA29C42887450D00D45FF4 /* RequestWithCurl.h */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		84FA29C62887465900D45FF4 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				84FA29C72887466A00D45FF4 /* libcurl.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		84FA29C92887467C00D45FF4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				84FA29CA2887467C00D45FF4 /* curlrules.h */,
+				84FA29CB2887467C00D45FF4 /* stdcheaders.h */,
+				84FA29CC2887467C00D45FF4 /* mprintf.h */,
+				84FA29CD2887467C00D45FF4 /* easy.h */,
+				84FA29CE2887467C00D45FF4 /* curl.h */,
+				84FA29CF2887467C00D45FF4 /* curlver.h */,
+				84FA29D02887467C00D45FF4 /* typecheck-gcc.h */,
+				84FA29D12887467C00D45FF4 /* multi.h */,
+				84FA29D22887467C00D45FF4 /* curlbuild.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		84FA29D32887470700D45FF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84FA29D42887470700D45FF4 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FA29A5288743F900D45FF4 /* iOS-OCWrapper-cCurl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FA29BA288743FE00D45FF4 /* Build configuration list for PBXNativeTarget "iOS-OCWrapper-cCurl" */;
+			buildPhases = (
+				84FA29A2288743F900D45FF4 /* Sources */,
+				84FA29A3288743F900D45FF4 /* Frameworks */,
+				84FA29A4288743F900D45FF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-OCWrapper-cCurl";
+			productName = "iOS-OCWrapper-cCurl";
+			productReference = 84FA29A6288743F900D45FF4 /* iOS-OCWrapper-cCurl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FA299E288743F900D45FF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					84FA29A5288743F900D45FF4 = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+				};
+			};
+			buildConfigurationList = 84FA29A1288743F900D45FF4 /* Build configuration list for PBXProject "iOS-OCWrapper-cCurl" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FA299D288743F900D45FF4;
+			productRefGroup = 84FA29A7288743F900D45FF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FA29A5288743F900D45FF4 /* iOS-OCWrapper-cCurl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FA29A4288743F900D45FF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA29B6288743FE00D45FF4 /* LaunchScreen.storyboard in Resources */,
+				84FA29B3288743FE00D45FF4 /* Assets.xcassets in Resources */,
+				84FA29B1288743F900D45FF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FA29A2288743F900D45FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA29AE288743F900D45FF4 /* ViewController.swift in Sources */,
+				84FA29AA288743F900D45FF4 /* AppDelegate.swift in Sources */,
+				84FA29C52887450D00D45FF4 /* RequestWithCurl.cpp in Sources */,
+				84FA29AC288743F900D45FF4 /* SceneDelegate.swift in Sources */,
+				84FA29C0288744C500D45FF4 /* RequestWithCurlWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84FA29AF288743F900D45FF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FA29B0288743F900D45FF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84FA29B4288743FE00D45FF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FA29B5288743FE00D45FF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84FA29B8288743FE00D45FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84FA29B9288743FE00D45FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FA29BB288743FE00D45FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-OCWrapper-cCurl/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS-OCWrapper-cCurl/libs",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yilmaz.iOS-OCWrapper-cCurl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-OCWrapper-cCurl/OCWrappers/iOS-OCWrapper-cCurl-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84FA29BC288743FE00D45FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-OCWrapper-cCurl/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS-OCWrapper-cCurl/libs",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yilmaz.iOS-OCWrapper-cCurl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-OCWrapper-cCurl/OCWrappers/iOS-OCWrapper-cCurl-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FA29A1288743F900D45FF4 /* Build configuration list for PBXProject "iOS-OCWrapper-cCurl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA29B8288743FE00D45FF4 /* Debug */,
+				84FA29B9288743FE00D45FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FA29BA288743FE00D45FF4 /* Build configuration list for PBXNativeTarget "iOS-OCWrapper-cCurl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA29BB288743FE00D45FF4 /* Debug */,
+				84FA29BC288743FE00D45FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FA299E288743F900D45FF4 /* Project object */;
+}
